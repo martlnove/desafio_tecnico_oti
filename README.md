@@ -4,12 +4,10 @@
 
 ## Instruções para rodar o projeto
 - Bash ou Prompt de Comando do Windows
-> Terminal: Instalação de dependencias
-npm install
+> Terminal: Instalação de dependencias: npm install
 - Realizar a clonagem do projeto / download dos arquivos em máquina local
 - Encontrar via terminal o diretório do projeto em máquina local
-> Terminal: Subir projeto clonado em servidor local para visualização -> localhost:8080
-npm run dev
+> Terminal: Subir projeto clonado em servidor local para visualização -> localhost8080: npm run dev
 ## Tecnologias utilizadas
 - HTML
 - CSS
