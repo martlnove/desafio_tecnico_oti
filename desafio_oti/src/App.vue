@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Desafio Técnico OTI</a>
+        <a class="navbar-brand" href="#">Desafio Técnico OTI Software</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Digite seu produto" aria-label="Search">
@@ -24,6 +24,11 @@
         </div>
       </li>
     </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Desafio Técnico Software - OTI Copyright © 2017 OTI Software</a>
+      </div>
+    </nav>
   </div>
 </template>
 
