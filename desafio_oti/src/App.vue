@@ -5,8 +5,7 @@
         <a class="navbar-brand" href="#">Desafio Técnico OTI Software</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Digite seu produto" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <input class="form-control me-2" type="search" v-on:input="busca = $event.target.value" placeholder="Encontre seu produto!" aria-label="Search">
            </form>
          </div>
       </div>
@@ -17,7 +16,7 @@
       <p>{{mensagem}}</p>
     </div>
     <ul class="text-center lista">
-      <li class="rounded lista-produto" v-for="produto of produtos">
+      <li class="rounded lista-produto" v-for="produto of buscaProdutos">
         <div class="painel">
           <h2 class="painel-titulo">{{produto.titulo}}</h2>
           <img class="img-fluid size" :src="produto.url" :alt="produto.titulo">
@@ -71,8 +70,18 @@ export default {
           url: 'https://a-static.mlcdn.com.br/618x463/ventilador-arno-40cm-turbo-force-vf49-vf49/gazinshop/8931/097736b9cdf3f254a28e9ca800790ecd.jpg',
           titulo: 'Ventilador'
         }
-
-      ]
+      ],
+      busca: ''
+    }
+  },
+  computed: {
+    buscaProdutos(){
+      if(this.busca){
+        let exp = new RegExp(this.busca.trim(),'i');
+        return this.produtos.filter(produto => exp.test(produto.titulo));
+      }else{
+        return this.produtos;
+      }
     }
   }
 }
