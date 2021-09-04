@@ -1,19 +1,19 @@
-# Desafio Tecnico OTI Software
+## Desafio Tecnico OTI Software
 
-> A Vue.js project
+> Uma tela que seja um Single Page Aplication (SPA) que possa atender um loja de eletrodomesticos que lista produtos através de um loop (Laço de Repetições).
 
-## Build Setup
-
-``` bash
-# install dependencies
+## Instruções para rodar o projeto
+> Bash ou Prompt de Comando do Windows
+- Terminal: Instalação de dependencias
 npm install
-
-# serve with hot reload at localhost:8080
+> Realizar a clonagem do projeto / download dos arquivos em máquina local
+> Encontrar via terminal o diretório do projeto em máquina local
+- Terminal: Subir projeto clonado em servidor local para visualização -> localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
+## Tecnologias utilizadas
+> HTML
+> CSS
+> JavaScript
+> Vuejs
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
